@@ -17,4 +17,5 @@
 .button:active {
     background-color: #245FBD;
     box-shadow: 0 0 8px rgba(50, 50, 50, .25);
+    transition: .3s;
 }
