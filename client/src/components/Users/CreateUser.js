@@ -45,10 +45,15 @@ const CreateUser = (props) => {
         setInputAge(event.target.value)
     }
 
+    const errorHandler = () => {
+        setError(false)
+    }
+
     return (
         <>
             {error
                 && <ErrorModal
+                    onCloseModal={errorHandler}
                     title={error.title}
                     message={error.message}>
                 </ErrorModal>}
